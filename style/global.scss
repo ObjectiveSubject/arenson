@@ -1,0 +1,446 @@
+/*--------------------------------------------------------------
+ Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #000000;
+	@include helveticaRoman;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.6em;
+}
+
+body {
+	width: 100%; //Fancybox fix
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+ 	@include helveticaBold;
+ 	margin-bottom: 0.809em;
+  line-height: 1em; 
+//  -webkit-font-smoothing: antialiased;
+//	-moz-osx-font-smoothing: grayscale;
+	&.lightweight {
+		@include helveticaRoman;
+	}
+}
+	
+h1 { @include h1size; }
+
+h2 { @include h2size; }
+	
+h3 { @include h3size; }
+
+h4 { @include h4size; }
+
+h5 { @include h5size; }
+
+h6 { @include h6size; }
+
+p { margin-bottom: 1.5em; }
+
+b, strong, .strong {
+	@include helveticaBold;
+}
+
+.lightweight {
+	@include helveticaRoman;
+}
+
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+	color: #000;
+}
+code, kbd, tt, var {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small,
+.small {
+	font-size: 75%;
+}
+big,
+.big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+ Elements
+--------------------------------------------------------------*/
+hr {
+	background-color: $aof_border_gray;
+	border: 0;
+	height: 1px;
+	margin: 0;
+}
+ul, ol {
+	margin: 0;
+	@include clearfix;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+dt {
+	@include helveticaBold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+th {
+	@include helveticaBold;
+}
+
+/*--------------------------------------------------------------
+ Forms
+--------------------------------------------------------------*/
+.aof_button,
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in IE6/IE7 */
+}
+
+.aof_button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	border: none;
+	background: #000;
+	color: #fff;
+	-webkit-appearance: none !important;
+	border-radius: 0 !important;
+	padding: 14px 20px;
+	text-align: center;
+	@include helveticaBold;
+	@include transition();
+}
+
+.aof_button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #00F;
+	color: #FFF;
+}
+
+.aof_button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing:    content-box;
+	box-sizing:         content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+	color: #999;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	padding: 12px;
+	font-size: 16px;
+	@include transition();
+	
+	&:hover, &:focus {
+		color: #000;
+		outline: none;
+		border-color: #000;
+	}	
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+label { 
+	display: block;
+	@include helveticaBold;
+	padding: 12px 0;
+}
+
+/* Uniform JS stuff */
+.checker {
+	position: relative;
+	cursor: pointer;
+	width: 20px;
+	padding: 15px 0;
+	span {
+		border: 1px solid #000;
+		width: 20px; height: 20px;
+		&:before {
+			font-family: "arenson-icons";
+			font-size: 12px;
+		}
+		&.checked:before {
+			content: "[";
+		}
+	}
+	input[type="checkbox"] {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 18px;
+		cursor: pointer;
+		margin: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+ Links
+--------------------------------------------------------------*/
+a {
+	color: inherit;
+	text-decoration: none;
+	@include transition();
+}
+a:hover,
+a:focus,
+a:active {
+	color: $aof_blue;
+	@include transition();
+}
+
+/*--------------------------------------------------------------
+ Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after,
+.menu:before,
+.menu:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after,
+.menu:after {
+	clear: both;
+}
+
+
+/*--------------------------------------------------------------
+ Special Classes
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 14px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: lighten($aof_border_gray, 10%);
+  border-left: 1px solid $aof_border_gray;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #000; 
+	border: 6px solid lighten($aof_border_gray, 10%);
+}	
+
+
+/*--------------------------------------------------------------
+ Special Classes
+--------------------------------------------------------------*/
+.user_logged_out {
+	.non-user { display: block; }
+	.user-only { display: none; }
+}
+.user_logged_in {
+	.non-user { display: none; }
+	.user-only { display: block; }
+}
+
+.hide-text { display: none; }
+
+.clearfix { @include clearfix; }
+
+.assistive-text {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

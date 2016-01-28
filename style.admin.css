@@ -1,0 +1,100 @@
+/* ADMIN STYLES FOR AOF BACKEND */
+
+
+.aof_config {
+
+}
+.aof_config .section{
+	margin-bottom:30px;
+}
+
+.aof_config .clearfix {
+	clear:both;
+}
+.aof_config .exportSection {
+
+}
+
+.aof_config .data_manipulation {
+    margin-top: 15px;
+}
+
+	.aof_config .descriptor {
+		margin-right:10px;
+	}
+	
+	.aof_config .tinyinput {
+		margin-right: 8px;
+		width: 27px;		
+	}
+
+.aof_config .history_paginate {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.aof_config .information {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DFDFDF;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    text-indent: -2px;
+    width: 800px;
+
+}
+
+.aof_config .history_paginate a {
+		background: none repeat scroll 0 0 #555555;
+		border: 1px solid black;
+		color: white;
+		display: inline-block;
+		margin-right: 3px;
+		padding: 3px;
+		text-decoration: none;	
+	}
+	
+.aof_config .history_paginate a:hover {
+		background:white;
+		color:#555555;
+	}
+	
+.aof_config .history_paginate .current {
+    background: none repeat scroll 0 0 white;
+    color: #555555;
+    padding: 5px;
+	}
+	
+	
+
+.aof_config .binder_deets {
+	display:none;
+}
+
+.aof_config .binder_deets.opened_details td{
+    background: none repeat scroll 0 0 #E6EEEE;
+    border: 1px solid #E6EEEE;
+}
+
+.aof_config .binder_overview {
+
+}
+
+	.aof_config .binder_overview.opened_box {
+		background:#E6EEEE;
+	}
+	
+	.aof_config .target_accordion_link {
+		display:block;
+	}
+	
+	.aof_config .target_accordion_link:after {
+		font-family: 'aof_backend';
+		content: '\e801';
+	}
+	
+	.aof_config .target_accordion_link.opened_box:after {
+		content: '\e802';
+	}

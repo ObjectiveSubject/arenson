@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2012 by original authors @ fontello.com</metadata>
+<defs>
+<font id="aof_backend" horiz-adv-x="1000" >
+<font-face font-family="aof_backend" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="down-open" unicode="&#xe801;" d="M0 533q0 25 18 43t43 18 43-18l305-304 304 304q18 18 43 18t43-18q18-18 18-43t-18-43l-390-390-391 390q-18 19-18 43z" horiz-adv-x="817.383" />
+<glyph glyph-name="up-open" unicode="&#xe802;" d="M0 167q0 26 18 43l390 390 390-390q18-18 18-43 0-26-18-44t-43-18-43 18l-304 305-304-305q-18-18-43-18t-43 18q-18 18-18 44z" horiz-adv-x="816.895" />
+<glyph glyph-name="right-open" unicode="&#xe804;" d="M0 0q0 25 18 43l305 304-305 305q-18 18-18 43t18 43 43 18 43-18l390-391-390-390q-19-18-43-18t-43 18q-18 18-18 43z" horiz-adv-x="495.117" />
+<glyph glyph-name="left-open" unicode="&#xe803;" d="M0 353l391 391q18 18 43 18 24 0 43-18 18-18 18-43t-18-43l-305-304 305-305q18-18 18-43t-18-43q-18-18-43-18t-43 18z" horiz-adv-x="495.117" />
+<glyph glyph-name="vector" unicode="&#xe800;" d="M0 40l136 136 47-47 220 220q-30 44-25 99t44 94q39 39 94 44t99-26l220 221-47 47 135 135 136-135-136-136-47 47-142-142q66 16 122 16 101 0 194-39t164-110q13-13 13-31t-13-31-31-13-31 13q-60 60-136 91t-160 31q-97 0-183-42 15-40 5-83t-41-75q-32-31-75-41t-82 5q-38-78-42-164t27-169 95-146q13-13 13-31t-13-31q-13-13-31-13-17 0-30 13-96 96-130 224t-2 256l-143-142 47-47-135-136z m81 0l54-54 53 54-53 54z m788 787l53-54 54 54-54 53z" horiz-adv-x="1226.563" />
+<glyph glyph-name="info-circled" unicode="&#xe806;" d="M0 350q0 96 37 182t100 149 149 100 182 37q95 0 182-37t150-100 100-149 37-182q0-95-37-182t-100-150-150-100-182-37q-96 0-182 37t-149 100-100 150-37 182z m398 170q0-29 19-46t51-17q32 0 51 17t19 46-19 46-51 17q-32 0-51-17t-19-45z m4-402l132 0 0 299-132 0 0-299z" horiz-adv-x="937.5" />
+<glyph glyph-name="camera" unicode="&#xe805;" d="M0 95l0 508q0 65 47 111t112 46l737 0q65 0 112-46t47-111l0-508q0-64-47-110t-112-46l-737 0q-65 0-112 46t-47 110z m114 508q0-18 13-31t31-13q18 0 31 13t13 31-13 31-31 13-31-13-13-31z m179-245q0-63 31-117t85-85 117-31 117 31 85 85 31 117-31 117-85 85-117 31-117-31-85-85-31-117z m88 0q0-61 43-104t103-43 103 43 43 104q0 61-43 103t-104 43-104-43-43-103z" horiz-adv-x="1054.688" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,154 @@
+/**
+ * CSS for the WordPress Admin area
+ *
+ * @since Arenson 1.0.6
+ */
+
+@font-face {
+	font-family: 'arenson-icons';
+	src:url('../fonts/arenson-icons.eot?-3pmcs7');
+	src:url('../fonts/arenson-icons.eot?#iefix-3pmcs7') format('embedded-opentype'),
+		url('../fonts/arenson-icons.woff?-3pmcs7') format('woff'),
+		url('../fonts/arenson-icons.ttf?-3pmcs7') format('truetype'),
+		url('../fonts/arenson-icons.svg?-3pmcs7#arenson-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-ar"]:before	 {
+	font-family: "arenson-icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+}
+
+.icon-ar_product-furniture:before {
+	content: "\31";
+}
+.icon-ar_product-rentals:before {
+	content: "\33";
+}
+.icon-ar_product-props:before {
+	content: "\34";
+}
+.icon-ar_product-architectural:before {
+	content: "\32";
+}
+.icon-ar_product-outlet:before {
+	content: "\35";
+}
+.icon-ar_service-logistics:before {
+	content: "\30";
+}
+.icon-ar_service-install:before {
+	content: "\39";
+}
+.icon-ar_service-project-control:before {
+	content: "\37";
+}
+.icon-ar_service-visualization:before {
+	content: "\38";
+}
+.icon-ar_service-tech-tools:before {
+	content: "\36";
+}
+.icon-ar_market-archdesign:before {
+	content: "\65";
+}
+.icon-ar_market-government:before {
+	content: "\74";
+}
+.icon-ar_market-contracting:before {
+	content: "\75";
+}
+.icon-ar_market-education:before {
+	content: "\72";
+}
+.icon-ar_market-healthcare:before {
+	content: "\77";
+}
+.icon-ar_market-realestate:before {
+	content: "\70";
+}
+.icon-ar_market-nonprofit:before {
+	content: "\6f";
+}
+.icon-ar_market-corpcom:before {
+	content: "\71";
+}
+.icon-ar_market-hospitality:before {
+	content: "\69";
+}
+.icon-ar_market-startup:before {
+	content: "\79";
+}
+
+
+.big-icon:before { font-size: 32px; }
+
+body {
+	font-family: 'HelveticaNeueW01-55Roma', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+#adminmenu .menu-top .wp-menu-name,
+strong { 
+	font-family:'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.post-state { color: #E14D43; }
+
+#menu-posts-products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "x" !important; }
+
+#menu-posts-office_furn_products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "1" !important; }
+#menu-posts-office_idea_overview .wp-menu-image:before { font-family: "arenson-icons" !important; content: "1" !important; }
+#menu-posts-office_service .wp-menu-image:before { font-family: "arenson-icons" !important; content: "1" !important; }
+
+#menu-posts-arch_products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "2" !important; }
+#menu-posts-arch_idea_overview .wp-menu-image:before { font-family: "arenson-icons" !important; content: "2" !important; }
+#menu-posts-arch_service .wp-menu-image:before { font-family: "arenson-icons" !important; content: "2" !important; }
+
+#menu-posts-furn_rental_products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "3" !important; }
+#menu-posts-rental_idea_overview .wp-menu-image:before { font-family: "arenson-icons" !important; content: "3" !important; }
+#menu-posts-rental_service .wp-menu-image:before { font-family: "arenson-icons" !important; content: "3" !important; }
+
+#menu-posts-prop_products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "4" !important; }
+#menu-posts-prop_idea_overview .wp-menu-image:before { font-family: "arenson-icons" !important; content: "4" !important; }
+#menu-posts-prop_service .wp-menu-image:before { font-family: "arenson-icons" !important; content: "4" !important; }
+
+#menu-posts-outlet_products .wp-menu-image:before { font-family: "arenson-icons" !important; content: "5" !important; }
+#menu-posts-outlet_idea_overview .wp-menu-image:before { font-family: "arenson-icons" !important; content: "5" !important; }
+#menu-posts-outlet_service .wp-menu-image:before { font-family: "arenson-icons" !important; content: "5" !important; }
+
+#menu-posts-market_overview .wp-menu-image:before { content: "\f180" !important; }
+
+#menu-posts-product_overviews .wp-menu-image:before { content: "\f325" !important; }
+
+#menu-posts-service .wp-menu-image:before {	content: "\f237" !important; }
+
+#menu-posts-ideas .wp-menu-image:before { content: "\f339" !important; }
+
+#menu-posts-projects .wp-menu-image:before { content: "\f157" !important; }
+
+#menu-posts .wp-menu-image:before { content: "\f109" !important; }
+
+#menu-posts-content .wp-menu-image:before { content: "\f103" !important; }
+
+#menu-posts-client_content .wp-menu-image:before { content: "\f337" !important; }
+
+#menu-posts-client_stores .wp-menu-image:before { content: "\f174" !important; }
+
+#menu-posts-email_templates .wp-menu-image:before { content: "\f175" !important; }
+
+#adminmenu li.wp-menu-separator {
+	height: 0 !important;
+	border-top: 1px solid #000;
+	margin: 20px 0;
+}

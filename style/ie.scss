@@ -1,0 +1,46 @@
+/* -----------------------------------------------------
+IE
+-------------------------------------------------------- */
+.ie {
+	.slick-slide {
+		height: auto;
+	}
+}
+
+
+/* -----------------------------------------------------
+IE9 and below
+-------------------------------------------------------- */
+.lt-ie10 {
+
+	/* Fancybox Pop-ups
+	------------------------- */
+	#ajax_loading,
+	#fb_loading {
+		background: url('img/ajax_loader_simple.gif') center center no-repeat;
+		img { display: none; }
+	}
+
+}
+
+
+
+/* -----------------------------------------------------
+IE8 and below
+-------------------------------------------------------- */
+.lt-ie9 {
+
+	/* Home
+	------------------------- */
+	.slide {
+	
+		/* Slide Text */
+		p { visibility: hidden; }
+		
+		/* Opened/Hovered Slide */
+		&.open, &.hovered {
+			p { visibility: visible; }
+		}
+	}	
+
+}

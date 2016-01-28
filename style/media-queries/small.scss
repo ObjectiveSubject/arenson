@@ -1,0 +1,589 @@
+@media only screen and (max-width: 700px) {
+
+	/* Footer
+	------------------------ */
+	.site-footer {
+		.row-title { font-size: 1.7em; margin-bottom: 1em; }
+		
+		.col2 {
+			position: relative;
+			width: 100%;
+			left: auto;
+			top: auto;
+			bottom: auto;
+			.row-title { width: 80%; padding:	30px; }
+		}
+		
+		.markets .footer-nav .menu-item { margin: 0 0 1em 0; width: 100%; }
+	
+		.help {
+			ul li {
+				width: 100%;
+				float: left;
+				text-align: left;
+				margin: 0 0 1em 0;
+			}
+			.icon-ar-pointer {
+				font-size: 1em;
+				vertical-align: bottom;
+				margin-right: 0px;
+			}
+		}
+		
+		#mc-embedded-subscribe-form label { max-width: none; width: 100%; }	
+		#mc_embed_signup .field-group {
+			position: relative;
+			top: auto;
+			right: auto;
+			width: 100%;
+		}	
+		#mc_embed_signup {
+			#mce-EMAIL {
+				position: relative;
+				padding: 10px 0;
+				margin: 5px 0;
+				width: 100%;
+				font-size: 1.5em;
+			}
+			#mc-embedded-subscribe {
+				position: relative;
+				width: 100%;
+				padding: 10px 0;
+			}
+		}
+
+		.jobs-privacy,
+		.employees-clients { 
+			padding-bottom: 0; 
+			.wrapper { padding-bottom: 30px; }
+		}
+		
+		.jobs-privacy {
+			.col1 .row-title { padding: 0 0 30px 0; }
+			.col2 .row-title { padding: 30px; }
+		}
+		
+		.employees-clients .col2 {
+			.row-title { padding-bottom: 0; }		
+			.clients-nav {
+				padding: 0 0 30px 30px;
+				width: 80%;
+			}
+		}
+	}
+	
+	/* FancyBox Pop-ups
+	------------------------ */
+	.fb_popup_default {
+	
+		.form_container {
+			.login_access { 
+				@include h5size;
+				width: 70%;
+			}
+			label,
+			.binder_sublabel {
+				width: 100%; margin-right: 0;
+				padding: 0 0 5px;
+			}
+			input[type="text"], 
+			input[type="password"],
+			textarea,
+			.selector { width: 100%; }
+			
+			.checker { padding: 0; }
+		
+			.login_buttons .left_button {
+				width: 100%;
+				margin: 0 0 10px;
+				.aof_button {
+					background: darken($aof_yellow, 15%);
+					&:hover { background: #000; }
+				}
+			}
+			.login_buttons .right_button {
+				width: 100%;
+				margin: 0;
+			}
+		
+			.form_module {
+				a.binder_accordion { 
+					@include psize;
+				}
+			}
+		}		
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 620px) {
+
+	/* Global
+	----------------------- */
+	h1 { @include h2size; } 
+	h2 { @include h3size; } 
+	h3 { @include h4size;	}
+	h4 { @include h5size;	} 
+	h5 { @include h6size; } 
+	h6 { @include psize; }
+	
+	.centering_box {
+		//max-width: 320px;
+		padding: 0 20px;
+	}
+	
+	/* ---------------------------------------- 
+	Header
+	------------------------------------------- */
+	.menu-toggle { 
+		top: 10px; 
+		z-index: 1;
+		right: 20px;
+	}
+	.mobile_contact { 
+		top: 13px; 
+		right: 50px;
+	}
+	.title-division {
+		margin: 10px 0 0;
+		width: 100%;
+
+		.site-title {
+			width: 140px;
+			float: none;
+			margin: 0 0 10px 0;
+			a:before {
+				font-size: 140px;
+				line-height: 28px;
+			}
+		}
+		
+		.site_divisions {
+			width: 100%;
+			margin: 0;
+			float: none;
+			.division { 
+				margin: 0; 
+				padding: 0;
+				.icon { display: none; }
+				.division-name { font-size: 14px;  }
+				.toggle { padding: 5px 0; }
+			}
+		}
+	}
+	.main-navigation {
+		&.open { height: 190px; padding-top: 10px; }
+		
+		li { width: 100%; }
+
+		.menu-main-container, 
+		.menu-utility-container {
+			width: 50%;
+			float: left;			
+			a { 
+				border-bottom: 1px solid #222;
+				padding: 8px 0;	
+			}			
+		}
+	}
+	#search {
+		&.open { height: 120px; padding: 5px 0; }
+		.centering_box { padding: 0 20px; }
+		#searchform {
+			#s { font-size: 1em; margin-bottom: 7px;}
+			#searchsubmit { position: relative;	width: 100%; }
+		}
+		.close-btn { top: 13px; right: 20px; margin: 0; }		
+	}
+	#contact {
+		&.open { height: 480px; }
+		.contact-info {
+			padding: 10px 0;
+			li {
+				width: 100%;
+				h3 { @include h5size; }
+				h5 { margin-bottom: 0.5em; }
+			}
+		}
+		.contact-form {
+			
+			.gform_body { 
+				.gform_fields {
+					.message { width: 100%; margin: 0 0 7px 0; }
+					.name, .phone { width: 100%; }	
+				} 
+			}
+		}
+		.close-btn { right: 20px; }
+	}
+	#product_map {
+		.site_divisions { 
+			.div_list { 
+				.division {
+					width: 200px;
+					float: none;
+					margin-right: 0;
+				}	
+			}
+		}
+		.products { 			
+			.cat_column {
+				.cat_term {
+					width: 100%;
+					margin-right: 0% !important;
+				}
+			}
+		}
+	}
+
+
+
+	/* ---------------------------------------- 
+	Main
+	------------------------------------------- */
+	#main { margin-top: 99px; }
+	.division-global #main {
+		margin-top: 50px;
+	}
+	
+	/* Page Header
+	----------------------- */
+	.page-title { 
+		@include h2size;
+	}
+	
+	/* Breadcrumbs
+	----------------------- */
+	.breadcrumbs {
+		ul { padding-left: 20px; padding-right: 20px; }
+	}
+
+	/* Login / Register
+	----------------------- */		
+	.page-login {
+		
+		label {
+			@include psize;
+			width: 100%;
+		}
+		
+		input[type="text"], 
+		input[type="password"], 
+		.selector { width: 100%; }
+		
+		.checker { padding: 0; }
+		
+		label#username_taken_label, 
+		label#email_taken_label, 
+		label.error { width: 100%;	margin-left: 0; }
+		
+		#signup_user {
+			width: 100%;
+			margin-left: 0;
+			float: none;
+		}
+	}
+	#aof_createaccount {
+		.acct_inputs { padding-top: 0; }
+	}
+	
+	/* Errors and Alerts
+	----------------------- */
+	.fb_results,
+	.action_alerts {
+		&#newmember_confirm { /* Register Page */
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	/* Client Dashboard
+	----------------------- */
+	.client-dashboard {	
+		.favorites_binder {
+			.collection_name { @include h3size; }
+		}
+		
+		.create_binder {
+			.aof_button, input, textarea { width: 100%;}
+		}
+		.action_alerts { width: 100%; }
+	}
+	
+	/* Binders 
+	----------------------- */
+	.binder-page {
+	
+		.binder_action_box { 
+		
+			&#binder_tool_dl_box {
+				.aof_button { display: block; }
+				.message { display: none; }
+			}
+		
+			&#binder_tool_email_box { 
+				input#binder_email_destination,
+				input.aof_button {
+					width: 100%;
+					margin: 0 0 10px 0;
+				}
+				.message { margin: 0;}
+			}
+			&#binder_tool_edit_box {
+				input#binder_new_title,
+				textarea { 
+					width: 100%;
+					margin: 0;
+					max-width: 100%;
+					margin-bottom: 10px; 
+				}
+				input.aof_button { width: 100%; }
+			}
+		
+			&.open {
+				&#binder_tool_email_box { height: 240px; }
+			}
+			
+		}
+		
+		.binder_product_overview {
+			.binder_item_desc,
+			.binder_item_info {
+				width: 100%;
+				float: none;
+				margin: 0;
+			}
+		}
+		
+	}
+
+	/* Home
+	----------------------- */
+	.home {
+		
+		.slide {
+			&.open,
+			&.hovered,
+			&.closed, 
+			&.not-hovered {
+				padding-top: 110%;
+				
+				.slide-title {
+					@include h4size;
+					clear: both;
+					margin-left: 0;
+					margin-bottom: 10px;		
+				}
+			}
+			
+			.icon { font-size: 40px; margin-bottom: 5px; }
+			.slide-text {
+				margin: 0;
+				@include psize;
+				width: 100%;
+			}
+		}
+		
+		.feature { 
+			width: 100%;
+			margin-bottom: 2em;
+			.img {
+				padding-top: 50%;
+				margin-bottom: 1em;
+			}
+		}
+
+	}
+
+	/* Slides
+	----------------------- */
+	.hero-slides {
+		.slick-slide {
+			.fade { background: url('img/dark-overlay.png') left top repeat; }
+			.text {
+				.large-text { @include h5size; }
+			}
+		}
+		.slick-dots {
+			padding: 10px 20px;
+			text-align: center;
+		}
+	}
+	.full-bleed {
+		img { width: 150%; }
+	}
+	.slick-prev, .slick-next { display: none !important; }
+	
+	/* Single Product
+	----------------------- */
+	.single-product {
+		.user_product_interaction .menu_horizontal li	{
+			width: 100%;
+			border-bottom: 1px solid $aof_border_gray;
+			a { display: block; padding: 10px 0; }
+		}
+	}
+
+
+
+
+	/* ---------------------------------------- 
+	Footer
+	------------------------------------------- */
+	.site-footer {
+		.col2 .row-title { padding:	20px; }
+	
+		.jobs-privacy {
+			.col1 .row-title { padding: 0 0 20px 0; }
+			.col2 .row-title { padding: 20px; }
+		}
+		
+		.employees-clients {
+			.employee-nav { padding-bottom: 20px; }
+			.col2 {
+				.row-title { padding-bottom: 0; }		
+				.clients-nav { padding: 0 0 20px 20px; width: 80%; }
+			}
+		}
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+	
+	h1 { @include h3size; } 
+	h2 { @include h4size; } 
+	h3 { @include h5size;	}
+	h4 { @include h6size;	} 
+	h5 { @include psize; } 
+	h6 { @include psize; }
+
+
+	/* ---------------------------------------- 
+	Main
+	------------------------------------------- */
+	
+	/* Page Header
+	----------------------- */
+	.mobile_contact {
+		padding-right: 5px;
+		&:after { margin-left: 5px; }
+	}
+	.page-title { @include h3size; }
+
+	/* Client Dashboard
+	------------------------*/
+	.client-dashboard {
+		
+		.collection_header {
+			text-align: left;
+			
+			.collection_name {
+				margin-bottom: 10px;
+				.icon { 
+					display: block;
+					margin-bottom: 10px;
+				} 
+			}
+		}
+		.collection_desc {
+			p {
+				@include psize;
+				margin: 0;
+			}
+		}
+		.viewmore { 
+			border-top: 1px solid;
+			padding: 10px 0;
+		}
+		.favorites_binder {
+			.collection_name { 
+				@include h5size;  
+				.icon { display: block; margin-bottom: 10px; }
+			}
+		}		
+	}
+	
+
+	/* Blackbar Links
+	----------------------- */		
+	.blackbar-links {
+		li { width: 100%; }
+	}
+	
+	/* metaContentBlackbar
+	----------------------- */
+	.metaContentBlackBar {
+		li {
+			width: 100%;
+			margin: 0;
+			&.third { margin-right: 0 !important; }
+		}
+	}
+
+	/* Collections and Grids 
+	----------------------- */
+	.collection_header {
+		text-align: center;
+		.collection_name { @include h5size; margin: 0; }
+	}
+	.viewmore {
+		display: block;
+	}
+	.tile {
+		.post_title { @include h6size; }
+	}
+	.grid-form {
+		.tile {
+			float: none;
+			width: 100%;
+			max-width: 330px;
+			margin: 0 auto !important;
+			&.third { margin: 0 auto !important; }
+			&.even { margin: 0 auto !important; }
+		}
+	}
+
+	
+	/* Slides
+	----------------------- */
+	.hero-slides {
+		.slick-slide {
+			.text {
+				.large-text { @include helveticaBold; }
+				.small-text { @include helveticaRoman; }
+			}
+		}
+	}
+	.full-bleed {
+		img { height: 100%; width: auto; }
+	}
+	
+	/* Single Division
+	----------------------- */
+	.single-division {
+		.hero-slides {
+			.slick-slide {
+				.text { top: 20px; }
+			}
+		}		
+	
+		#div-sub-nav {
+			.featured-item { width: 100%; margin: 0; }
+			.services, .ideas { width: 100%; }
+		}
+	}
+	
+
+
+}
+
+
+
